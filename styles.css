@@ -9,6 +9,16 @@ section {
   margin-bottom: 35px;
 }
 
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links a {
+  margin: 0 15px;
+}
+
 .header {
   text-align: center;
   padding: 25px 25px 80px 25px;
