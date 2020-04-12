@@ -10,8 +10,11 @@ section {
 }
 
 .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -40,18 +43,28 @@ a {
 @media only screen and (max-width: 600px) {
   .content {
     box-shadow: none !important;
+    -webkit-box-shadow: none !important;
   }
 }
 
 .content {
   max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   position: relative;
   top: -50px;
   margin: auto;
   height: calc(100vh - 240px);
+  -webkit-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19),
+    0 12px 15px 0 rgba(0, 0, 0, 0.24);
   box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19),
     0 12px 15px 0 rgba(0, 0, 0, 0.24);
 }
